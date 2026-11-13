@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Samantha</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Hola, me llamo Samantha ❤️</h1>
+    <p>Estudio 1.º de DAM y este es mi primer proyecto.</p>
+    <h2>Lo que quiero aprender este curso</h2>
+    <ol>
+      <li>Hacer muchas aplicaciones</li>
+      <li>Programar en diferentes lenguajes</li>
+      <li>Trabajar en equipo</li>
+      <li>Aprender a usar nuevas tecnologías</li>
+    </ol>
+    <p>
+      Mi editor es
+      <a href="https://code.visualstudio.com">Visual Studio Code</a>.
+    </p>
+    <img src="https://picsum.photos/400/200" alt="Imagen de ejemplo" />
+    <!-- Esto es un comentario: el navegador no lo muestra -->
+    <!-- selecciona cualquier línea y pulsa Ctrl+K y luego Ctrl+C. VS Code la convierte en
+comentario. Con Ctrl+K y Ctrl+U la descomenta -->
+    <br>
+    <button onclick="saludar()">Click aquí</button>
+    <button onclick="mensaje()">Clickeame</button>
+
+    <h2 id="marcador">0</h2>
+    <button onclick="sumar()">Sumar 1</button>
+    <!-- <h2 id="marcador2">0</h2>
+<button onclick="sumar2()">Sumar 2</button>
+<h2 id="marcador10">0</h2>
+<button onclick="sumar10()">Sumar 10</button> -->
+    <button onclick="restar1()">Restar 1</button>
+    <button onclick="restart()">Reiniciar</button>
+    <button onclick="mostrarSorpresa()">Sorpresa</button>
+    <p><a href="aficiones.html">Ver mis aficiones</a></p>
+    <p><a href="aprendido.html">Lo que he aprendido</a></p>
+    <script>
+      function saludar() {
+        alert("Hola, me llamo Samantha y estoy aprendiendo a programar.");
+      }
+      function mensaje() {
+        alert("¡Hola! Gracias por pulsarme.");
+      }
+      let cuenta = 0;
+      function sumar() {
+        if (cuenta == 10) {
+          document.getElementById("marcador").style.color = "red";
+        } else {
+          cuenta = cuenta + 1;
+          document.getElementById("marcador").textContent = cuenta;
+        }
+      }
+      function restar1() {
+        cuenta = cuenta - 1;
+        document.getElementById("marcador").textContent = cuenta;
+      }
+      function restart() {
+        cuenta = 0;
+        document.getElementById("marcador").textContent = cuenta;
+      }
+      function mostrarSorpresa() {
+        alert("Lo has arreglado. Bienvenido al oficio.");
+      }
+
+      // let cuenta2 = 0;
+      // function sumar2() {
+      // cuenta2 = cuenta2 + 2;
+      // document.getElementById("marcador2").textContent = cuenta2;
+      // }
+      // let cuenta10 = 0;
+      // function sumar10() {
+      // cuenta10 = cuenta10 + 10;
+      // document.getElementById("marcador10").textContent = cuenta10;
+      // }
+    </script>
+  </body>
+</html>

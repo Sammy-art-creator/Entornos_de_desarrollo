@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <title>Mis Aficiones ❤️</title>
+  </head>
+  <body>
+    <h1>Bienvenido a mi espacio de aficiones ❤️</h1>
+    <p>
+      Una de mis mayores aficiones es la fotografía. Me encanta salir a caminar
+      con el móvil y buscar detalles que normalmente pasan desapercibidos: la
+      luz del atardecer, una calle tranquila o un rincón con color. Para mí es
+      una forma de desconectar de las pantallas de estudio y de fijarme más en
+      lo que tengo alrededor. Después me gusta retocar las fotos y guardar mis
+      favoritas en una carpeta.
+    </p>
+    <p>
+      También disfruto mucho cocinando recetas nuevas y jugando a videojuegos
+      tranquilos con amigos. Cocinar me relaja y, además, es un poco como
+      programar: sigues unos pasos, pruebas, corriges un error y mejoras el
+      resultado. Los videojuegos me sirven para pasar un buen rato con gente y
+      aprender cómo están pensados por dentro. Intento sacar tiempo para estas
+      actividades cada semana, incluso en épocas con muchas tareas.
+    </p>
+    <h2>Mi horario</h2>
+<table border="1" cellpadding="8">
+  <tr>
+    <th>Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th>
+  </tr>
+  <tr>
+    <td>8:30</td><td>Bases de Datos</td><td>Sistemas informáticos</td><td>Programación</td><td>Base de Datos</td><td>Entornos de Desarrollo</td>
+  </tr>
+  <tr>
+    <td>9:25</td><td>Bases de Datos</td><td>Sistemas informáticos</td><td>Sistemas informáticos</td><td>Base de Datos</td><td>Entornos de Desarrollo</td>
+  </tr>
+   <tr>
+    <td>10:20</td><td>Programación</td><td>Sistemas informáticos</td><td>Sistemas informáticos</td><td>Base de Datos</td><td>Entornos de Desarrollo</td>
+  </tr>
+   <tr>
+    <td>11:45</td><td>IPE 1</td><td>Programación</td><td>Proyecto</td><td>Lenguaje de Marcas</td><td>Programación</td>
+  </tr>
+   <tr>
+    <td>12:40</td><td>IPE 1</td><td>Programación</td><td>Inglés</td><td>Lenguaje de Marcas</td><td>Programación</td>
+  </tr>
+   <tr>
+    <td>13:35</td><td>IPE 1</td><td>Programación</td><td>Inglés</td><td>Lenguaje de Marcas</td><td>Programación</td>
+  </tr>
+</table>
+<br>
+
+<form>
+  <label for="correo">Tu correo:</label>
+  <input type="text" id="correo">
+  <button type="button">Enviar</button>
+</form>
+    
+
+    <button onclick="cambiarFondo()">Cambiar fondo</button><br>
+
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+<button onclick="saludarNombre()">Saludar</button>
+<p id="saludo"></p>
+
+<div class="columnas">
+  <div>
+    <h2>Mis objetivos</h2>
+    <p>Estudio 1.º de DAM y estos son mis objetivos para este curso:</p>
+    <ul>
+      <li>Crear una aplicación para el móvil</li>
+      <li>Aprender a trabajar en equipo como en una empresa real</li>
+      <li>Conseguir unas prácticas que valgan la pena</li>
+      <li>Dominar HTML, CSS y JavaScript</li>
+    </ul>
+  </div>
+
+  <div>
+    <h2>Mi vídeo favorito</h2>
+    <iframe width="100%" height="200"
+      src="https://www.youtube.com/embed/B402rKl4bUg"
+      title="Vídeo de YouTube" allowfullscreen></iframe>
+  </div>
+</div>
+
+
+    <script>
+        function cambiarFondo() {
+  document.body.style.backgroundColor = "#800080";
+}
+function saludarNombre() {
+  let nombre = document.getElementById("nombre").value;
+  document.getElementById("saludo").textContent = "Hola, " + nombre + " 👋";
+}
+    </script>
+    <p><a href="index.html">Volver al inicio</a></p>
+    <p><a href="aprendido.html">Lo que he aprendido</a></p>
+  </body>
+</html>

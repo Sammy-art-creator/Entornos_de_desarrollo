@@ -1,0 +1,23 @@
+body {
+background-color: #111D33;
+color: #FFFFFF;
+font-family: Arial, sans-serif;
+max-width: 700px;
+margin: 40px auto;
+padding: 0 20px;
+line-height: 1.6;
+font-size: 12px;
+}
+h1 {
+color: #4D97FF;
+}
+a {
+color: #4D97FF;
+}
+.columnas {
+  display: flex;
+  gap: 20px;
+}
+.columnas > div {
+  flex: 1;
+}
